@@ -1,9 +1,83 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #fff;
+    background-color: #c1c7d9;
     padding: 20px;
+    width: 100%;
+    color: #fff;
+
+}
+/* header style */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    background: #333;
+    color: white;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+
+/* home style */
+.Home {
+    background-color: rgb(22, 42, 22);
+    background-image: url('../IMAGE/photo_2024-05-04_09-19-51.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    height: 500px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white; /* Adjust text color for better contrast */
+}
+
+.Home h1{
+   padding: 18px;
+   color: rgb(45, 48, 55);
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+}
+
+/* About style  */
 .about-title {
     text-align: center;
     margin-bottom: 20px;
@@ -38,4 +112,44 @@ p {
 
 .mission, .activities {
     margin-top: 20px;
+}
+/* footer styling */
+footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content p {
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.social-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.social-links li {
+    display: inline;
+}
+
+.social-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #f4a261;
 }
