@@ -124,7 +124,7 @@ p {
       min-height: 100vh;
     }
 .container {
-      background-color: #c77f7f;
+      background-color: #987474;
       padding: 30px;
       border-radius: 5px;
       box-shadow: 0 2px 5px rgba(14, 0, 0, 0.1);
@@ -134,6 +134,8 @@ p {
     h2 {
       text-align: center;
       margin-bottom: 20px;
+      color: #03010c;
+
     }
 
     input[type="text"],
@@ -153,7 +155,7 @@ p {
     }
 
     button {
-      background-color: #088a0c;
+      background-color: #07cc0d;
       color: rgb(79, 33, 33);
       padding: 12px 20px;
       border: none;
