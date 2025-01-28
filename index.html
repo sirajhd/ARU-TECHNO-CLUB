@@ -97,35 +97,39 @@
  </section>
 <!--contact-->
 <section class="ContactSection">
-    
-    <div class="container">
-    <h2>CONTACT US</h2>
-    <form>
-      <label for="name"></label>
-      <input type="text" id="name" name="name" placeholder="Your Name" required>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <div class="form-image-container">
+      <!-- Image Division -->
+      <div class="image-container">
+        <img src="IMAGE\photo_2024-05-04_09-19-51.jpg" alt="Contact Us Image">
+      </div>
+      <!-- Form Division -->
+      <form action="/submit-form" method="post">
+        <label for="name" aria-label="Your Name"></label>
+        <input type="text" id="name" name="name" placeholder="Your Name" aria-required="true" required>
 
-      <label for="email"></label>
-      <input type="email" id="email" name="email" placeholder="Your Email" required>
+        <label for="email" aria-label="Your Email"></label>
+        <input type="email" id="email" name="email" placeholder="Your Email" aria-required="true" required>
 
-      <label for="phone"></label>
-      <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" required>
+        <label for="phone" aria-label="Your Phone Number"></label>
+        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" aria-required="true" required>
 
-      <label for="tg-username"></label>
-      <input type="text" id="tg-username" name="tg-username" placeholder="Your Telegram Username" required>
+        <label for="tg-username" aria-label="Your Telegram Username"></label>
+        <input type="text" id="tg-username" name="tg-username" placeholder="Your Telegram Username" aria-required="true" required>
 
-      <label for="github-username"></label>
-      <input type="text" id="github-username" name="github-username" placeholder="Your GitHub Username" required>
+        <label for="github-username" aria-label="Your GitHub Username"></label>
+        <input type="text" id="github-username" name="github-username" placeholder="Your GitHub Username" aria-required="true" required>
 
-      <label for="message"></label>
-      <textarea id="message" name="message" placeholder=" Message" required></textarea>
+        <label for="message" aria-label="Your Message"></label>
+        <textarea id="message" name="message" placeholder="Message" aria-required="true" required></textarea>
 
-      <button type="submit"><h3>Submit</h3></h3></button>
-
- 
-
-    </form>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
   </div>
 </section>
+
 
  <!-- footer part -->
  <footer>
