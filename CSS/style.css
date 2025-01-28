@@ -1,7 +1,7 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #c1c7d9;
-    padding: 20px;
+    background-color:rgb(156, 151, 23);
+    padding: 10px;
     width: 100%;
     color: #fff;
 
@@ -11,10 +11,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-
-body {
-    font-family: Arial, sans-serif;
 }
 
 header {
@@ -102,6 +98,7 @@ h2 {
     color: #666;
     font-size: 1.8em;
     margin-top: 20px;
+    text-align: center;
 }
 
 p {
