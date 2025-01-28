@@ -1,6 +1,6 @@
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #bec4be;
+    background-color: #444343;
     padding: 20px;
     width: 100%;
     color: #fff;
@@ -42,8 +42,11 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: white;
+    color: rgb(104, 50, 190);
     font-size: 18px;
+}
+.nav-links a:hover{
+    color: #8b975f;
 }
 
 .menu-toggle {
@@ -51,7 +54,9 @@ header {
     font-size: 24px;
     cursor: pointer;
 }
-
+.gall{
+    text-align: center;
+}
 
 
 /* home style */
@@ -72,7 +77,7 @@ header {
 
 .Home h1{
    padding: 18px;
-   color: rgb(0, 3, 10);
+   color: rgb(2, 21, 65);
    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
    
 }
@@ -86,26 +91,26 @@ header {
 .about-section {
     max-width: 800px;
     margin: auto;
-    background-color: #fdf9f9;
+    background-color: #816c6c;
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(110, 107, 107, 0.1);
 }
 
 h1 {
-    color: #110d0d;
+    color: #0a0505;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
 
 h2 {
-    color: #161212;
+    color: #0c0606;
     font-size: 1.8em;
     margin-top: 20px;
 }
 
 p {
-    color: #0a0606;
+    color: #0e0101;
     line-height: 1.6;
     margin-bottom: 15px;
 }
@@ -163,7 +168,7 @@ p {
 
 .ContactSection {
   padding: 40px 20px;
-  background-color: #f7efef;
+  background-color: #816c6c;
   font-family: Arial, sans-serif;
 }
 
@@ -211,7 +216,7 @@ form input,
 form textarea {
   width: 100%;
   padding: 10px;
-  border: 1px solid #ada3a3;
+  border: 1px solid #e6dbdb;
   border-radius: 5px;
   font-size: 1rem;
 }
@@ -222,7 +227,7 @@ form textarea {
 }
 
 form button {
-  background-color: #06f139;
+  background-color: #07db35;
   color: #fdfdfd;
   padding: 10px;
   border: none;
@@ -233,15 +238,15 @@ form button {
 }
 
 form button:hover {
-  background-color: #6b7075;
+  background-color: #0f4885;
 }
 
 
 
 /* footer styling */
 footer {
-    background: #070606;
-    color: white;
+    background: #0a0101;
+    color: rgb(255, 253, 253);
     text-align: center;
     padding: 20px 0;
     margin-top: 20px;
@@ -255,7 +260,7 @@ footer {
 
 .footer-content p {
     margin-bottom: 10px;
-    color: #fff;
+    color: #e40606;
 }
 
 .social-links {
@@ -269,14 +274,14 @@ footer {
 }
 
 .social-links a {
-    color: white;
+    color: rgb(96, 86, 189);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #f7a665;
+    color: #f4a261;
 }
 
 
