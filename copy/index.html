@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Arsi University Techno-Based Club - Web Development and Technology Collaboration">
+    <title>Arsi University Techno Club</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <h1>Arsi University Techno Club</h1>
+            </div>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to Arsi University Techno Club!</h2>
+            <p>Join us to collaborate, learn web development, and explore the latest tech fields.</p>
+            <a href="#register" class="cta-button">Join Now</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About the Club</h2>
+            <p>Our club is a community of passionate learners focusing on web development and cutting-edge technology. We collaborate and grow together by building projects, learning new skills, and staying up-to-date with the latest advancements in the tech world.</p>
+        </div>
+    </section>
+
+    <!-- Schedule Section -->
+    <section id="schedule" class="schedule">
+        <div class="container">
+            <h2>Upcoming Learning Schedule</h2>
+            <table>
+                <tr>
+                    <th>Week</th>
+                    <th>Topic</th>
+                    <th>Date</th>
+                </tr>
+                <tr>
+                    <td>Week 1</td>
+                    <td>Introduction to Web Development</td>
+                    <td>Feb 1, 2025</td>
+                </tr>
+                <tr>
+                    <td>Week 2</td>
+                    <td>HTML and CSS Basics</td>
+                    <td>Feb 8, 2025</td>
+                </tr>
+                <tr>
+                    <td>Week 3</td>
+                    <td>JavaScript Fundamentals</td>
+                    <td>Feb 15, 2025</td>
+                </tr>
+            </table>
+        </div>
+    </section>
+
+    <!-- Registration Section -->
+    <section id="register" class="register">
+        <div class="container">
+            <h2>Register to Join the Club</h2>
+            <form action="#" method="POST">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email Address:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="fields">Select Technology Fields:</label>
+                <select id="fields" name="fields" multiple required>
+                    <option value="web-development">Web Development</option>
+                    <option value="mobile-apps">Mobile Applications</option>
+                    <option value="data-science">Data Science</option>
+                    <option value="machine-learning">Machine Learning</option>
+                    <option value="cyber-security">Cyber Security</option>
+                </select>
+
+                <button type="submit" class="cta-button">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer id="contact">
+        <div class="container">
+            <p>&copy; 2025 Arsi University Techno Club | All rights reserved</p>
+        </div>
+    </footer>
+</body>
+
+</html>
