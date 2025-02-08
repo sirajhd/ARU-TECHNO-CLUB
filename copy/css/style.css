@@ -1,0 +1,221 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Font */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header Styling */
+header {
+    background-color: #007BFF;
+    padding: 20px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .logo h1 {
+    color: white;
+    font-size: 2rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1rem;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #333;
+    color: white;
+    padding: 100px 0;
+    text-align: center;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background-color: #28a745;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #218838;
+}
+
+/* About Section */
+.about {
+    background-color: #ffffff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+}
+
+/* Schedule Section */
+.schedule {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.schedule h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.schedule table {
+    width: 80%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    font-size: 1rem;
+}
+
+.schedule th, .schedule td {
+    padding: 15px;
+    border: 1px solid #ddd;
+}
+
+.schedule th {
+    background-color: #007BFF;
+    color: white;
+}
+
+.schedule td {
+    background-color: #f1f1f1;
+}
+
+/* Registration Section */
+.register {
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.register h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.register form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.register input, .register select {
+    padding: 12px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 400px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.register button {
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    background-color: #007BFF;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.register button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .about, .schedule, .register {
+        padding: 40px 0;
+    }
+
+    .register input, .register select {
+        width: 90%;
+    }
+
+    .cta-button {
+        font-size: 1.1rem;
+    }
+}
