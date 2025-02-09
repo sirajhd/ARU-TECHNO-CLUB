@@ -59,7 +59,7 @@ header {
    
 }
 .nav-links a:hover{
-    color: #080000;
+    color:blue;
     transform: rotate(360deg); 
     border-radius: 5px;
     padding: 5px;
