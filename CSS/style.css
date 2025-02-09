@@ -12,9 +12,6 @@ body {
     box-sizing: border-box;
    
 }
-
-
-
 h1 {
     color: #0a0505;
     font-size: 2.5em;
@@ -66,5 +63,5 @@ tr:nth-child(even) {
     background-color: #f2f2f2;
 }
 tr:hover {
-    background-color: #ddd;
+    background-color: #a69f9f;
 }
