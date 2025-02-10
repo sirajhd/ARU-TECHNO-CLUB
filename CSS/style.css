@@ -61,7 +61,7 @@ footer {
 }
 .footer-content p {
     margin-bottom: 10px;
-    color: #e40606;
+    color: #b8a61b;
 }
 .social-links {
     list-style: none;
@@ -72,7 +72,7 @@ footer {
     display: inline;
 }
 .social-links a {
-    color: rgb(96, 86, 189);
+    color: rgb(206, 203, 233);
     text-decoration: none;
     font-size: 18px;
     transition: color 0.3s;
