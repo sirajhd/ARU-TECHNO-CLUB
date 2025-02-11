@@ -120,119 +120,169 @@
 
 
 
-        <!-- Table section -->
-        <section class="table-section">
+        <!DOCTYPE html>
+        <html lang="en">
 
-            <h2 id="Schedule">Course Schedule</h2>
-            <table>
-                <tr>
-                    <th>Time</th>
-                    <th>Web Programming</th>
-                    <th>Graphic Design</th>
-                    <th>AI</th>
-                    <th>Cyber Security</th>
-                </tr>
-                <tr>
-                    <td>Round One</td>
-                    <td>HTML & CSS Basics</td>
-                    <td>Introduction to Design</td>
-                    <td>Machine Learning Basics</td>
-                    <td>Network Security Basics</td>
-                </tr>
-                <tr>
-                    <td>Round Two</td>
-                    <td>JavaScript & React</td>
-                    <td>Photoshop & Illustrator</td>
-                    <td>Deep Learning Fundamentals</td>
-                    <td>Penetration Testing</td>
-                </tr>
-                <tr>
-                    <td>Round Three</td>
-                    <td>Backend Development</td>
-                    <td>UI/UX Design Principles</td>
-                    <td>AI Model Deployment</td>
-                    <td>Ethical Hacking</td>
-                </tr>
-                <tr>
-                    <td>Round Four</td>
-                    <td>Full-Stack Project</td>
-                    <td>Branding & Identity</td>
-                    <td>Natural Language Processing</td>
-                    <td>Cybersecurity Strategies</td>
-                </tr>
-            </table>
-        </section>
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Course Schedule</title>
+            <style>
+                /* Basic table styling */
+                table {
+                    width: 100%;
+                    border-collapse: collapse;
+                }
 
-        <!--contact-->
+                th,
+                td {
+                    padding: 10px;
+                    border: 1px solid #ddd;
+                    text-align: center;
+                }
 
-        <h2 id="REGISTIRATION">REGISTIRATION</h2>
-        <section class="ContactSection">
-            <div class="container">
-                <div class="form-image-container">
-                    <!-- Image Division -->
-                    <div class="image-container">
-                        <img src="./IMAGE/NFZP9221.JPG" alt="Contact Us Image">
-                    </div>
-                    <form action="/submit-form" method="post">
-                        <label for="name" aria-label="Your Name"></label>
-                        <input type="text" id="name" name="name" placeholder="Your Name" aria-required="true" required>
-                        <label for="email" aria-label="Your Email"></label>
-                        <input type="email" id="email" name="email" placeholder="Your Email" aria-required="true"
-                            required>
-                        <label for="phone" aria-label="Your Phone Number"></label>
-                        <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" aria-required="true"
-                            required>
-                        <label for="tg-username" aria-label="Your Telegram Username"></label>
-                        <input type="text" id="tg-username" name="tg-username" placeholder="Your Telegram Username"
-                            aria-required="true" required>
-                        <label for="github-username" aria-label="Your GitHub Username"></label>
-                        <input type="text" id="github-username" name="github-username"
-                            placeholder="Your GitHub Username" aria-required="true" required>
-                        <label for="message" aria-label="Your Message"></label>
-                        <textarea id="message" name="message" placeholder="Message" aria-required="true"
-                            required></textarea>
-                        <button type="submit">Register</button>
-                    </form>
-                </div>
+                th {
+                    background-color: #f2f2f2;
+                }
+            </style>
+        </head>
+
+<body>
+
+    <!-- Table section -->
+    <section class="table-section">
+        <h2 id="Schedule">Course Schedule</h2>
+        <table id="scheduleTable">
+            <tr>
+                <th>Time</th>
+                <th>Web Programming</th>
+                <th>Graphic Design</th>
+                <th>AI</th>
+                <th>Cyber Security</th>
+            </tr>
+            <tr>
+                <td>Round One</td>
+                <td>HTML & CSS Basics</td>
+                <td>Introduction to Design</td>
+                <td>Machine Learning Basics</td>
+                <td>Network Security Basics</td>
+            </tr>
+            <tr>
+                <td>Round Two</td>
+                <td>JavaScript & React</td>
+                <td>Photoshop & Illustrator</td>
+                <td>Deep Learning Fundamentals</td>
+                <td>Penetration Testing</td>
+            </tr>
+            <tr>
+                <td>Round Three</td>
+                <td>Backend Development</td>
+                <td>UI/UX Design Principles</td>
+                <td>AI Model Deployment</td>
+                <td>Ethical Hacking</td>
+            </tr>
+            <tr>
+                <td>Round Four</td>
+                <td>Full-Stack Project</td>
+                <td>Branding & Identity</td>
+                <td>Natural Language Processing</td>
+                <td>Cybersecurity Strategies</td>
+            </tr>
+        </table>
+
+        <!-- Button to add a new row -->
+        <button onclick="addRow()">Add New Round</button>
+    </section>
+
+    <script>
+        function addRow() {
+            // Get the table body
+            const table = document.getElementById("scheduleTable");
+
+            // Create a new row
+            const newRow = table.insertRow();
+
+            // Insert new cells in the row
+            for (let i = 0; i < 5; i++) {
+                const newCell = newRow.insertCell(i);
+                // You can customize this content based on user input or default text
+                newCell.innerHTML = `New Data ${i + 1}`;
+            }
+        }
+    </script>
+
+</body>
+
+</html>
+
+
+<!--contact-->
+
+<h2 id="REGISTIRATION">REGISTIRATION</h2>
+<section class="ContactSection">
+    <div class="container">
+        <div class="form-image-container">
+            <!-- Image Division -->
+            <div class="image-container">
+                <img src="./IMAGE/NFZP9221.JPG" alt="Contact Us Image">
             </div>
-        </section>
+            <form action="/submit-form" method="post">
+                <label for="name" aria-label="Your Name"></label>
+                <input type="text" id="name" name="name" placeholder="Your Name" aria-required="true" required>
+                <label for="email" aria-label="Your Email"></label>
+                <input type="email" id="email" name="email" placeholder="Your Email" aria-required="true" required>
+                <label for="phone" aria-label="Your Phone Number"></label>
+                <input type="tel" id="phone" name="phone" placeholder="Your Phone Number" aria-required="true" required>
+                <label for="tg-username" aria-label="Your Telegram Username"></label>
+                <input type="text" id="tg-username" name="tg-username" placeholder="Your Telegram Username"
+                    aria-required="true" required>
+                <label for="github-username" aria-label="Your GitHub Username"></label>
+                <input type="text" id="github-username" name="github-username" placeholder="Your GitHub Username"
+                    aria-required="true" required>
+                <label for="message" aria-label="Your Message"></label>
+                <textarea id="message" name="message" placeholder="Message" aria-required="true" required></textarea>
+                <button type="submit">Register</button>
+            </form>
+        </div>
+    </div>
+</section>
 
-        <!-- Login Section -->
+<!-- Login Section -->
 
-        <h2 class="gall" id="Login">Login</h2>
-        <section class="login-section">
-            <div class="login-form-container">
-                <form action="/login" method="post">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" name="username" placeholder="Enter your username" required>
-                    <label for="Email">Email</label>
-                    <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+<h2 class="gall" id="Login">Login</h2>
+<section class="login-section">
+    <div class="login-form-container">
+        <form action="/login" method="post">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required>
+            <label for="Email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your Email" required>
 
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" placeholder="Enter your password" required>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-                    <button type="submit">Login</button>
-                </form>
-            </div>
-        </section>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</section>
 
-        <!-- footer Section -->
+<!-- footer Section -->
 
-        <footer>
-            <div class="footer-content">
-                <p>&copy; 2025 ARU TECHNO CLUB. All rights reserved.</p>
-                <ul class="social-links">
-                    <li><a href="https://www.linkedin.com/company/arsi-university-techno-based-club-aru-tech/"
-                            target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
-                    <li><a href="https://t.me/+Khnlz6OazTc0OTk0" target="_blank"><i class="fab fa-telegram-plane"></i>
-                            Telegram</a></li>
-                    <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
-                </ul>
-            </div>
-        </footer>
+<footer>
+    <div class="footer-content">
+        <p>&copy; 2025 ARU TECHNO CLUB. All rights reserved.</p>
+        <ul class="social-links">
+            <li><a href="https://www.linkedin.com/company/arsi-university-techno-based-club-aru-tech/"
+                    target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+            <li><a href="https://t.me/+Khnlz6OazTc0OTk0" target="_blank"><i class="fab fa-telegram-plane"></i>
+                    Telegram</a></li>
+            <li><a href="#" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+        </ul>
+    </div>
+</footer>
 
-        <script src="JS\scripts.js"></script>
+<script src="JS\scripts.js"></script>
 
-    </body>
+</body>
 
 </html>
