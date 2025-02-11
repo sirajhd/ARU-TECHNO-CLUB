@@ -190,26 +190,7 @@
             </tr>
         </table>
 
-        <!-- Button to add a new row -->
-        <button onclick="addRow()">Add New Round</button>
-    </section>
 
-    <script>
-        function addRow() {
-            // Get the table body
-            const table = document.getElementById("scheduleTable");
-
-            // Create a new row
-            const newRow = table.insertRow();
-
-            // Insert new cells in the row
-            for (let i = 0; i < 5; i++) {
-                const newCell = newRow.insertCell(i);
-                // You can customize this content based on user input or default text
-                newCell.innerHTML = `New Data ${i + 1}`;
-            }
-        }
-    </script>
 
 </body>
 
