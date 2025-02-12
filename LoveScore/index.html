@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,8 +14,9 @@
             align-items: center;
             height: 100vh;
             margin: 0;
-            background-color: #0fc1ac;
+            background-color: #767d7c;
         }
+
         .container {
             text-align: center;
             background-color: #fff;
@@ -24,46 +26,54 @@
             width: 100%;
             max-width: 400px;
         }
+
         h1 {
-            color:#2f75ee;;
+            color: #03070e;
+            ;
         }
+
         .score {
             font-size: 24px;
             font-weight: bold;
             margin-top: 20px;
             color: #333;
         }
+
         .score.good {
             color: green;
         }
+
         .score.poor {
             color: red;
         }
+
         .button {
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #2f75ee;
+            background-color: #0659e8;
             border: none;
             color: white;
             font-size: 16px;
             border-radius: 50px;
             cursor: pointer;
         }
+
         .button:hover {
-            background-color: #5efde5;
+            background-color: #25e6c9;
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>Love Score Calculator</h1>
-        
-        <label for="name">Your Name:</label><br>
+
+        <label for="name">Your Name: </label><br>
         <input type="text" id="myname" placeholder="Enter your name"><br><br>
         <label for="theirName">Their Name:</label><br>
         <input type="text" id="theirName" placeholder="Enter their name"><br><br>
         <button class="button" onclick="calculateLoveScore()">Calculate Love Score</button>
-       
+
 
         <div id="result" class="score"></div>
     </div>
@@ -88,7 +98,7 @@
             var resultDiv = document.getElementById("result");
             resultDiv.textContent = "Dear " + myname + ", your love score with " + theirName + " is " + loveScore + "%";
 
-         // Add a class for styling based on the score
+            // Add a class for styling based on the score
             if (loveScore >= 50) {
                 resultDiv.classList.add("good");
                 resultDiv.classList.remove("poor");
@@ -99,4 +109,5 @@
         }
     </script>
 </body>
+
 </html>
