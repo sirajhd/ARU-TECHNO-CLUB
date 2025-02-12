@@ -35,7 +35,7 @@ The ARU Techno Club website serves as a central hub for club activities, events,
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/[your-username]/[repo-name].git` (Replace with your actual username and repository name).
+1. Clone the repository: `git clone https://github.com/https://github.com/sirajhd/ARU-TECHNO-CLUB.git.git` (Replace with your actual username and repository name).
 2. Navigate to the project directory: `cd [repo-name]`
 3. Open the `index.html` file in your web browser.
 
@@ -43,4 +43,3 @@ The ARU Techno Club website serves as a central hub for club activities, events,
 
 Simply open the `index.html` file in your browser to view the website.  Navigate through the different sections using the navigation menu.
 
-## File Structure
