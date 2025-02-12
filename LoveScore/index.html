@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Score</title>
+    <style>
+        /* Basic Styling */
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #0fc1ac;
+        }
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 50px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 400px;
+        }
+        h1 {
+            color:#2f75ee;;
+        }
+        .score {
+            font-size: 24px;
+            font-weight: bold;
+            margin-top: 20px;
+            color: #333;
+        }
+        .score.good {
+            color: green;
+        }
+        .score.poor {
+            color: red;
+        }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #2f75ee;
+            border: none;
+            color: white;
+            font-size: 16px;
+            border-radius: 50px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #5efde5;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Love Score Calculator</h1>
+        
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="myname" placeholder="Enter your name"><br><br>
+        <label for="theirName">Their Name:</label><br>
+        <input type="text" id="theirName" placeholder="Enter their name"><br><br>
+        <button class="button" onclick="calculateLoveScore()">Calculate Love Score</button>
+       
+
+        <div id="result" class="score"></div>
+    </div>
+
+    <script>
+        function calculateLoveScore() {
+            // Get values from input fields
+            var myname = document.getElementById("myname").value;
+            var theirName = document.getElementById("theirName").value;
+
+            // Check if names are provided
+            if (myname.trim() === "" || theirName.trim() === "") {
+                alert("Please enter both names.");
+                return;
+            }
+
+            // Generate a random love score
+            var loveScore = Math.random() * 100;
+            loveScore = Math.floor(loveScore) + 1;
+
+            // Display the result
+            var resultDiv = document.getElementById("result");
+            resultDiv.textContent = "Dear " + myname + ", your love score with " + theirName + " is " + loveScore + "%";
+
+         // Add a class for styling based on the score
+            if (loveScore >= 50) {
+                resultDiv.classList.add("good");
+                resultDiv.classList.remove("poor");
+            } else {
+                resultDiv.classList.add("poor");
+                resultDiv.classList.remove("good");
+            }
+        }
+    </script>
+</body>
+</html>
