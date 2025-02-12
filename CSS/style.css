@@ -87,7 +87,7 @@ header {
 /* home style */
 .Home {
     background-color: rgb(199, 209, 215);
-    background-image: url('../IMAGE/HOME.jpg');
+    background-image: url('../IMAGE/photo1.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -101,7 +101,7 @@ header {
 
 .Home h1 {
     padding: 18px;
-    color: rgb(254, 255, 255);
+    color: rgb(34, 97, 97);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
