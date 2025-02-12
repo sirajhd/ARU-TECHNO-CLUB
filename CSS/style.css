@@ -248,13 +248,16 @@ table {
 
 th,
 td {
-    padding: 8px;
-    text-align: center;
-    border-bottom: 1px solid #087112;
+    padding: 2px;
+border: 1px solid #dddd;
+text-align: center;
+    
+    
 }
 
 th {
-    background-color: #56a02e;
+   
+    background-color: #f2f2f2;
     color: rgb(16, 13, 13);
 }
 
