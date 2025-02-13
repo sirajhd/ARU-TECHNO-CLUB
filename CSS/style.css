@@ -101,14 +101,14 @@ header {
 
 .Home h1 {
     padding: 18px;
-    color: rgb(34, 97, 97);
+    color: rgb(0, 11, 11);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 
 
 h1 {
-    color:yellowgreen;
+    color: yellowgreen;
     font-size: 2.5em;
     margin-bottom: 10px;
 }
@@ -249,14 +249,14 @@ table {
 th,
 td {
     padding: 2px;
-border: 1px solid #dddd;
-text-align: center;
-    
-    
+    border: 1px solid #dddd;
+    text-align: center;
+
+
 }
 
 th {
-   
+
     background-color: #f2f2f2;
     color: rgb(16, 13, 13);
 }
