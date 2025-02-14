@@ -180,6 +180,7 @@ h3{
 
 /* Events Section Styling */
 
+
 .event-section {
     padding: 40px;
     background-color: #f4f4f4;
@@ -218,6 +219,14 @@ h3{
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
 }
+.event-text h3 {
+    font-size: 1.8rem;
+    margin: 0 0 10px;
+    color: #2575fc;
+}
+
+
+
 
 /* gallery styling */
 
@@ -240,7 +249,6 @@ h3{
 
 .gallery img:hover {
     transform: scale(1.05);
-   
 }
 
 
