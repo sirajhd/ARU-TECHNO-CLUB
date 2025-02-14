@@ -1,0 +1,54 @@
+/* Basic Styling */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #767d7c;
+}
+
+.container {
+    text-align: center;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(8, 8, 8, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+h1 {
+    color: #03070e;
+}
+
+.score {
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #333;
+}
+
+.score.good {
+    color: green;
+}
+
+.score.poor {
+    color: red;
+}
+
+.button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #0659e8;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #25e6c9;
+}
