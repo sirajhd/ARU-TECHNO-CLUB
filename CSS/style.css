@@ -13,6 +13,10 @@ body {
     box-sizing: border-box;
 
 }
+html {
+    scroll-behavior: smooth;
+}
+
 
 /* header style */
 header {
@@ -22,7 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 20px 20px;
-    background: #080000;
+    background: #1b1a41;
     color: white;
     margin-top: 0;
     top: 0;
@@ -97,6 +101,7 @@ header {
     align-items: center;
     justify-content: center;
     color: white;
+    
 }
 
 .Home h1 {
@@ -229,7 +234,7 @@ h2:hover {
 
 .gallery img:hover {
     transform: scale(1.05);
-    background-image: url('../IMAGE/Anthish.jpg');
+   
 }
 
 
@@ -347,25 +352,29 @@ form button:hover {
 
 .login-section {
     padding: 40px;
-    background-color: #8c7b7b;
+    background-color: #f2f2f2;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .login-form-container {
-    background-color: #fff;
+    
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     width: 100%;
 }
+#login{
+    background-color: #e6dbdb;
+}
 
 .login-form-container form {
     display: flex;
     flex-direction: column;
     gap: 15px;
+   
 }
 
 .login-form-container label {
@@ -398,11 +407,13 @@ form button:hover {
 /* footer styling */
 
 footer {
-    background: #0a0101;
+    background: #1b1a41;
     color: rgb(255, 253, 253);
     text-align: center;
     padding: 20px 0;
-    margin-top: 20px;
+    width: 100%;
+    margin: 0;
+   
 }
 
 .footer-content {
