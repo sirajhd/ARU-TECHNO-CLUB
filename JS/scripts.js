@@ -1,6 +1,5 @@
-// Wait for the DOM to be fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-          // Get the form element
+
           const form = document.querySelector("form");
 
           // Add event listener for form submission
@@ -58,8 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                     // If all fields are valid, submit the form
                     if (isValid) {
-                              // You can handle the form submission via AJAX if needed
-                              // For now, we just log the values to the console
                               console.log("Form is valid. Submitting...");
 
                               // If using actual form submission:
